@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backmain">
+
+    <LinearLayout
+        android:id="@+id/activity_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+        tools:context="com.example.administrator.myapplication.Setting">
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_setting"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_hint_none"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/txt_hint_none"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_hint_none"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/txt_hint_none"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/txt_hint_none"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold"
+            android:id="@+id/txt_target"
+            />
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/txt_hint"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_hint_none"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold"/>
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:background="#4b7935"
+            android:text="อินซูลินสำหรับอาหาร"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="555"
+            android:id="@+id/txt_nameinsulin"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_hint_none"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_conent"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="@dimen/font_conent"
+            android:textColor="@android:color/black"
+             />
+</LinearLayout>
+        <TextView
+            android:id="@+id/txt_typeinsulin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:background="#4b7935"
+            android:text="อินซูลินสำหรับน้ำตาล"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="555"
+            android:id="@+id/txt_nameinsulin2"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/txt_sizeinsulin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_hint_none"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_conent"
+             />
+
+        <TextView
+            android:id="@+id/txt_carb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="@dimen/font_conent"
+            android:textColor="@android:color/black"
+             android:layout_marginRight="3dp"/>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/txt_typeinsulinbase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:background="#4b7935"
+            android:text="อินซูลินพื้นฐาน"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_conent"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="555"
+            android:id="@+id/txt_nameinsulinbase1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txt_sizeinsulinbase1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_hint_none"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_conent"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/txt_morningtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="@dimen/font_conent"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txt_sizeinsulinbase2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_hint_none"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_conent"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/txt_aftersleeptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="@dimen/font_conent"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_edit" />
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_back"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</ScrollView>

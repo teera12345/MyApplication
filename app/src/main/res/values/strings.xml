@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">เบาหวาน</string>
+    <string name="format_name">ชื่อเด็ก : %s</string>
+    <string name="txt_hint_none">-</string>
+    <string name="txt_setting">ตั้งค่า</string>
+    <string name="txt_back">กลับ</string>
+    <string name="txt_edit">แก้ไข</string>
+    <string name="txt_infokid">แก้ไข</string>
+    <string name="txt_editname">กรอก</string>
+    <string name="txt_name">ชื่อเด็ก</string>
+    <string name="txt_editbirthdat">วันเกิด</string>
+    <string name="txt_birthdayedit">กรอก</string>
+    <string name="txt_hight">ส่วนสูง</string>
+    <string name="txt_edithight">กรอก</string>
+    <string name="txt_weight">น้ำหนัก</string>
+    <string name="txt_editweight">กรอก</string>
+    <string name="txt_sugartarget">น้ำตาลเป้าหมาย</string>
+    <string name="txt_editsugartarget">กรอก</string>
+    <string name="txt_to">ถึง</string>
+    <string name="txt_editsugartarget2">กรอก</string>
+    <string name="butt_edit">แก้ไข</string>
+    <string name="format_hight">ส่วนสูง : %s ซม.</string>
+    <string name="format_date">วันเกิด : %s</string>
+    <string name="format_weight">น้ำหนัก : %s กก.</string>
+    <string name="format_target1">น้ำตาลเป้าหมาย : %s</string>
+    <string name="format_target2">%s</string>
+    <string name="txt_hint"> ถึง </string>
+    <string name="format_nameinsulin">%s</string>
+    <string name="format_sizeinsulin">ขนาด %s ยูนิต ต่อ คาร์บ</string>
+    <string name="format_carb"> %s กรัม/ส่วน</string>
+    <string name="format_nameinsulin2">%s</string>
+    <string name="format_sizeinsulin2">ขนาด %s ยูนิต ต่อ คาร์บ</string>
+    <string name="format_carb2"> %s กรัม/ส่วน</string>
+    <string name="format_nameinsulin4">%s</string>
+    <string name="format_sizeinsulin4">ขนาด %s ยูนิต ลดน้ำตาล</string>
+    <string name="format_carb4"> %s มิลลิกรัม/เดซิลิตร</string>
+    <string name="format_nameinsulinbase1">%s</string>
+    <string name="format_sizeinsulinbase1">ขนาด %s ยูนิต เช้า เวลา </string>
+    <string name="format_sizeinsulinbase2">ขนาด %s ยูนิต ก่อนนอน เวลา </string>
+    <string name="format_morningtime">%s</string>
+    <string name="format_aftersleeptime">%s</string>
+    <string name="format_checkedblood">ระดับน้ำตาลในเลือด : %s</string>
+    <string name="format_namefood">ชื่ออาหาร : %s</string>
+    <string name="format_coutcarb">จำนวนคาร์บ : %s กรัม/ส่วน</string>
+    <string name="format_emotion">อารมณ์ : %s</string>
+    <string name="format_stress">อารมณ์ : %s</string>
+    <string name="format_nosick">การเจ็บป่วย : %s</string>
+    <string name="format_sick">การเจ็บป่วย : %s</string>
+    <string name="format_noexercise">ออกกำลังกาย : %s</string>
+    <string name="format_exercise">ออกกำลังกาย : %s</string>
+
+    <string-array name="spiner_item">
+        <item>กรัม</item>
+        <item>ส่วน</item>
+    </string-array>
+
+
+</resources>
