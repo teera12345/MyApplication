@@ -9,13 +9,13 @@ import android.view.InputQueue;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Foods extends AppCompatActivity {
-String food1;
-    TextView f1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,15 +38,35 @@ String food1;
         listView.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
                 for (int i = 0 ;i < listfood.length; i++){
-                    if (arg2 ==i){
-                        calShot2.setId("2");
-                        calShot2.setNamefood(listfood[i].toString());
-                        Intent intent = new Intent(listView.getContext(),Count.class);
-                        startActivityForResult(intent,i);
-                        DatabaseManager databaseManager = new DatabaseManager(Foods.this);
-                        databaseManager.storeCalshot2(calShot2);
-                        break;
-                    }
+                if (arg2 == 0) {
+                    calShot2.setId("2");
+                    calShot2.setNamefood(listfood[0].toString());
+                    Intent intent = new Intent(listView.getContext(), Count.class);
+                    startActivityForResult(intent, 0);
+                    DatabaseManager databaseManager = new DatabaseManager(Foods.this);
+                    databaseManager.storeCalshot2(calShot2);
+                    break;
+
+
+                }
+                if (arg2 == i) {
+                    namefood2.setId("2");
+                    namefood2.setNamefood2(listfood[i].toString());
+                    Intent intent = new Intent(listView.getContext(), Count.class);
+                    startActivityForResult(intent, i);
+                    DatabaseManager databaseManager = new DatabaseManager(Foods.this);
+                    databaseManager.storeNamefood2(namefood2);
+                    break;
+                }
+
+            }
+
+                }
+
+        });
+       /* listView.setOnItemClickListener(new OnItemClickListener() {
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                for (int i = 0 ;i < listfood.length; i++){
                     if (arg2 ==i){
                         namefood2.setId("2");
                         namefood2.setNamefood2(listfood[i].toString());
@@ -58,9 +78,9 @@ String food1;
                     }
 
                 }
-                }
+            }
 
-        });
+        });*/
     }
 }
 

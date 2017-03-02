@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -19,10 +20,12 @@ import io.realm.Realm;
 public class Count extends AppCompatActivity {
     EditText countcarb;
     TextView namefood;
+    TextView namefood2_1;
     Spinner spiner;
     ArrayAdapter adapter;
     String food;
     String food2;
+    int counter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,11 +51,14 @@ public class Count extends AppCompatActivity {
 
         countcarb = (EditText)findViewById(R.id.editText41);
         namefood = (TextView) findViewById(R.id.editText43);
-        final TextView txtnamefood2 = (TextView) findViewById(R.id.txt_namefood2);
-        txtnamefood2.setVisibility(View.GONE);
+        namefood2_1 = (TextView)findViewById(R.id.txt_namefood2);
+        namefood2_1.setVisibility(View.GONE);
         TextView namefood3 = (TextView)findViewById(R.id.txt_namefood3);
         namefood3.setVisibility(View.GONE);
+        Button addfood = (Button)findViewById(R.id.btn_addfood);
 
+        Button addfood2 = (Button)findViewById(R.id.btn_addfood2);
+        addfood2.setVisibility(View.GONE);
 
         findViewById(R.id.button11).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,33 +73,49 @@ public class Count extends AppCompatActivity {
                 calShot2.setCountcarb(Integer.parseInt(countcarb.getText().toString()));
                 calShot2.setGum(spiner.getSelectedItem().toString());
 
+                namefood2.setId("2");
+                namefood2.setNamefood2(namefood2_1.getText().toString());
 
-
-               DatabaseManager databaseManager = new DatabaseManager(Count.this);
+                DatabaseManager databaseManager = new DatabaseManager(Count.this);
                 databaseManager.storeCalshot2(calShot2);
 
-
-
+                /*DatabaseManager databaseManager2 = new DatabaseManager(Count.this);
+                databaseManager2.storeNamefood2(namefood2);*/
             }
         });
         findViewById(R.id.button12).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*counter ++;
+                /*TextView textView = new TextView(Count.this);
+                Button button = new Button(Count.this);
+                textView.setText("Textview" + counter);*/
                 Intent i = new Intent(Count.this, ChoosetypeFood.class);
                 startActivity(i);
                 if (calShot2 != null) {
-                    txtnamefood2.setVisibility(View.VISIBLE);
-                    TextView txtnamefood2 = (TextView) findViewById(R.id.txt_namefood2);
-                    final Namefood2 namefood2 = new Namefood2();
-                    namefood2.setId("2");
-                    namefood2.setNamefood2(txtnamefood2.getText().toString());
-                    if (namefood2 != null) {
+                    namefood2_1.setVisibility(View.VISIBLE);
+                    food2 = namefood2.getNamefood2();
+                    namefood2_1.setText(food2);
+                }
+                /*LinearLayout linearLayout = (LinearLayout)findViewById(R.id.activity_count);
+                linearLayout.addView(textView);
+                linearLayout.addView(button);*/
 
-                        food2 = namefood2.getNamefood2();
-                        txtnamefood2.setText(food2);
-                    }
                 }
 
+
+
+        });
+        findViewById(R.id.btn_addfood).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Count.this, ChoosetypeFood.class);
+                startActivity(i);
+                /*if (calShot2 != null) {
+                    namefood2_1.setVisibility(View.VISIBLE);
+                    food2 = namefood2.getNamefood2();
+                    namefood2_1.setText(food2);
+                }*/
 
             }
         });
@@ -101,9 +123,11 @@ public class Count extends AppCompatActivity {
         if (calShot2 != null) {
             food = calShot2.getNamefood();
             namefood.setText(food);
+
         }
 
 
+        
     }
 
     }
